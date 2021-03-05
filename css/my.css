@@ -1,0 +1,7 @@
+/* Here is your custom css styles. */
+*{
+    cursor: url("/medias/favicon.ico"),auto!important;
+}
+:active{
+    cursor: url("/medias/favicon.ico"),auto!important;
+}
