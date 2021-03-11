@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Windows注册表, Tom-000">
+    <meta name="keywords" content="Linux系统目录结构, Tom-000">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Windows注册表 | Tom-000</title>
+    <title>Linux系统目录结构 | Tom-000</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Windows注册表</h1>
+                    <h1 class="description center-align post-title">Linux系统目录结构</h1>
                 </div>
             </div>
         </div>
@@ -434,8 +434,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Windows-%E6%B3%A8%E5%86%8C%E8%A1%A8/">
-                                <span class="chip bg-color">-Windows -注册表</span>
+                            <a href="/tags/Linux-%E7%B3%BB%E7%BB%9F%E7%9B%AE%E5%BD%95-%E7%AC%94%E8%AE%B0/">
+                                <span class="chip bg-color">-Linux -系统目录 -笔记</span>
                             </a>
                         
                     </div>
@@ -446,8 +446,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%B3%A8%E5%86%8C%E8%A1%A8/" class="post-category">
-                                -注册表
+                            <a href="/categories/Linux/" class="post-category">
+                                -Linux
                             </a>
                         
                     </div>
@@ -459,7 +459,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-03-05
+                    2021-03-11
                 </div>
                 
 
@@ -468,14 +468,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    6.9k
+                    626
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    26 分
+                    2 分
                 </div>
                 
 
@@ -495,76 +495,36 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="第一节-注册表基础"><a href="#第一节-注册表基础" class="headerlink" title="第一节  注册表基础"></a>第一节  注册表基础</h2><p>1.什么是注册表</p>
-<ul>
-<li> 注册表是windows操作系统、硬件设备以及客户应用程序得以正常运行和保存设置的核心“数据库”，也可以说是一个非常巨大的树状分层结构的数据库系统。注册表记录了用户安装在计算机上的软件和每个程序的相互关联信息，它包括了计算机的硬件配置，包括自动配置的即插即用的设备和已有的各种设备说明、状态属性以及各种状态信息和数据。利用一个功能强大的注册表数据库来统一集中地管理系统硬件设施、软件配置等信息，从而方便了管理，增强了系统的稳定性。</li>
+                <h2 id="第一节-树状目录结构"><a href="#第一节-树状目录结构" class="headerlink" title="第一节  树状目录结构"></a>第一节  树状目录结构</h2><p><img src="/images/y.jpg" alt="alt"></p>
+<h3 id="以下是对其解释（功能和存放文件）"><a href="#以下是对其解释（功能和存放文件）" class="headerlink" title="以下是对其解释（功能和存放文件）"></a>以下是对其解释（功能和存放文件）</h3><ul>
+<li>/bin：二进制文件，可执行文件</li>
+<li>/boot：启动Linux时使用的一些核心文件，一些连接文件及镜像文件</li>
+<li>/dev：Linux 的外部设备，在Linux 中访问设备的方式和访问文件的方式是相同的</li>
+<li>/etc： 系统管理所需要的配置文件和子目录</li>
+<li>/home：用户的主目录</li>
+<li>/lib：系统最基本的动态连接共享库，类似于 Windows 里的 DLL</li>
+<li>/lost+found：当系统非法关机后，这里就存放了一些文件</li>
+<li>/media：识别的设备挂载到这个目录下</li>
+<li>/mnt：让用户临时挂载别的文件系统的</li>
+<li>/opt：opt 是 optional(可选)，给主机额外安装软件</li>
+<li>/proc：Processes(进程)，/proc是一种伪文件系统（即虚拟文件系统），存储的是当前内核运行状态的一系列特殊文件，这个目录是一个虚拟的目录，直接访问这个目录来获取系统信息（使别人无法ping你的机器：echo 1 &gt; /proc/ sys * /net/ipv4/icmp_echo_ignore_all）</li>
+<li>/root：超级权限者的用户主目录</li>
+<li>/sbin：系统管理员使用的系统管理程序</li>
+<li>/selinux：Redhat/CentOS 所特有的目录，类似于 windows 的防火墙</li>
+<li>/srv：服务启动之后需要提取的数据</li>
+<li>/sys：Linux2.6 内核的变化，该目录下安装了 2.6 内核中新出现的一个文件系统 sysfs，sysfs文件系统集成3种文件信息：针对进程信息的 proc 文件系统、针对设备的 devfs 文件系统以及针对伪终端的 devpts 文件系统。当一个内核对象被创建的时候，对应的文件和目录也在内核对象子系统中被创建</li>
+<li>/tmp：临时文件</li>
+<li>/usr：共享资源，类似于windows下的program files目录</li>
+<li>/usr/bin：系统用户使用的应用程序</li>
+<li>/usr/sbin：超级用户使用的比较高级的管理程序和系统守护程序</li>
+<li>/usr/src：内核源代码默认的放置目录</li>
+<li>/var：经常被修改的目录放在这个目录下。包括各种日志文件</li>
+<li>/run：临时文件系统，存储系统启动以来的信息</li>
+<li>/etc： 系统中的配置文件</li>
+<li>/var：程序日志生成目录，具体在/var/log<br>/bin, /sbin, /usr/bin, /usr/sbin: 这是系给系统用户使用的指令，/sbin, /usr/sbin则是给 root 使用的指令</li>
 </ul>
-<p>2.注册表的功能</p>
-<ul>
-<li>刚才我们看到了，注册表中记录了用户安装在计算机上的软件和每个程序的相关信息，通过它可以控制硬件、软件、用户环境和操作系统界面的数据信息文件。相关知识：注册表文件的数据信息保存在system.dat和user.dat中、利用regedit.exe程序能够存取注册表文件</li>
-</ul>
-<p>3.编辑器说明</p>
-<ul>
-<li>在运行里键入regedit就可以进入<br>根键：这个称为HKEY…………，某一项的句柄项：附加的文件夹和一个或多个值<br>子项：在某一个项（父项）下面出现的项（子项）<br>值项：带有一个名称和一个值的有序值，每个项都可包括任何数量的值项，值项由三个部分组成：名称、数据类型和数据。\</li>
-</ul>
-<p>3.1名称：不包括反斜线的字符、数字、代表符和空格的任意组合。同一键中不可有相同的名称<br>3.2数据类型：包括字符串、二进制和双字节等<br>3.3数据：值项的具体值，它的大小可以占用64KB</p>
 <hr>
-<h2 id="第二节-总体结构分析"><a href="#第二节-总体结构分析" class="headerlink" title="第二节  总体结构分析"></a>第二节  总体结构分析</h2><h3 id="注册表包括以下5个根键"><a href="#注册表包括以下5个根键" class="headerlink" title="注册表包括以下5个根键:"></a>注册表包括以下5个根键:</h3><h4 id="1-HKEY-CLASSES-ROOT"><a href="#1-HKEY-CLASSES-ROOT" class="headerlink" title="1.HKEY_CLASSES_ROOT"></a>1.HKEY_CLASSES_ROOT</h4><p>说明：该根键包括启动应用程序所需的全部信息，包括扩展名，应用程序与文档之间的关系，驱动程序名，DDE和OLE信息，类ID<br>编号和应用程序与文档的图标等。</p>
-<h4 id="2-HKEY-CURRENT-USER"><a href="#2-HKEY-CURRENT-USER" class="headerlink" title="2.HKEY_CURRENT_USER"></a>2.HKEY_CURRENT_USER</h4><p>说明：该根键包括当前登录用户的配置信息，包括环境变量，个人程序以及桌面设置等</p>
-<h4 id="3-HKEY-LOCAL-MACHINE"><a href="#3-HKEY-LOCAL-MACHINE" class="headerlink" title="3.HKEY_LOCAL_MACHINE"></a>3.HKEY_LOCAL_MACHINE</h4><p>说明：该根键包括本地计算机的系统信息，包括硬件和操作系统信息，安全数据和计算机专用的各类软件设置信息</p>
-<h4 id="4-HKEY-USERS"><a href="#4-HKEY-USERS" class="headerlink" title="4.HKEY_USERS"></a>4.HKEY_USERS</h4><p>说明：该根键包括计算机的所有用户使用的配置数据，这些数据只有在用户登录系统时才能访问。这些信息告诉系统当前用户使<br>用的图标，激活的程序组，开始菜单的内容以及颜色，字体。</p>
-<h4 id="5-HKEY-CURRENT-CONFIG"><a href="#5-HKEY-CURRENT-CONFIG" class="headerlink" title="5.HKEY_CURRENT_CONFIG"></a>5.HKEY_CURRENT_CONFIG</h4><p>说明：该根键包括当前硬件的配置信息，其中的信息是从HKEY_LOCAL_MACHINE中映射出来的。</p>
-<hr>
-<h2 id="第三节-HKEY-CLASSES-ROOT"><a href="#第三节-HKEY-CLASSES-ROOT" class="headerlink" title="第三节 HKEY_CLASSES_ROOT"></a>第三节 HKEY_CLASSES_ROOT</h2><p>我们知道，在这一个根键中记录的是WINDOWS操作系统中所有数据文件的信息内容，主要记录了不同文件的文件扩展名和与<br>之相对应的应用程序。这就是为什么我们双击某一个文档的时候，可以由系统自动调出应用程序的所在了。<br>这个根键的子键当大家展开时发现是非常多的，它主要分为两种：一是已经注册的各类文件的扩展名；一是各种文件类型的<br>有关信息。<br>下面我们以AVIFILE举例说明一下其下面的子项的含义：</p>
-<h3 id="1、CLSID："><a href="#1、CLSID：" class="headerlink" title="1、CLSID："></a>1、CLSID：</h3><p>分类标识，系统可以用这个类标识来识别相同类型的文件</p>
-<h3 id="2、Compressors："><a href="#2、Compressors：" class="headerlink" title="2、Compressors："></a>2、Compressors：</h3><p>它下面有两个子项：auds:用于设置音频数据压缩程序的类标识；vids:用于设置视频数据压缩程序的类标识</p>
-<h3 id="3、defaultlcon"><a href="#3、defaultlcon" class="headerlink" title="3、defaultlcon"></a>3、defaultlcon</h3><p>用于设置默认图标，这个大家可以改一下试试</p>
-<h3 id="4、RIFFHandlers：在它的下面有两个类标识：AVI：用于设置AVI文件的类标识；WAVE：用于设置WAVE文件的类标识"><a href="#4、RIFFHandlers：在它的下面有两个类标识：AVI：用于设置AVI文件的类标识；WAVE：用于设置WAVE文件的类标识" class="headerlink" title="4、RIFFHandlers：在它的下面有两个类标识：AVI：用于设置AVI文件的类标识；WAVE：用于设置WAVE文件的类标识"></a>4、RIFFHandlers：在它的下面有两个类标识：AVI：用于设置AVI文件的类标识；WAVE：用于设置WAVE文件的类标识</h3><h3 id="5、protocol："><a href="#5、protocol：" class="headerlink" title="5、protocol："></a>5、protocol：</h3><p>包括了执行程序和编辑程序的路径和文件名：StdExecute（stdfileediting)_server：用于指定编辑程序；StdExecute（stdfileediting)_PackageObjects:用于指定后打开AVI包对象的编辑程序；StdExecute（stdfileediting)_verb：用于设置编辑程序时的工作状态，其中有0、1、2等状态</p>
-<h3 id="6、Shell子项："><a href="#6、Shell子项：" class="headerlink" title="6、Shell子项："></a>6、Shell子项：</h3><p>用于设置视频文件的外壳：open:用于设置打开AVI文件的程序；play：用于设置播放命令的程序</p>
-<h3 id="7、Shellex："><a href="#7、Shellex：" class="headerlink" title="7、Shellex："></a>7、Shellex：</h3><p>包括了视频文件的外壳扩展</p>
-<hr>
-<h2 id="第四节-HKEY-CURRENT-USER"><a href="#第四节-HKEY-CURRENT-USER" class="headerlink" title="第四节 HKEY_CURRENT_USER"></a>第四节 HKEY_CURRENT_USER</h2><p>此根键中保存的信息（当前用户的子项信息）与HKEY_USERS_DEFAULT下面的一模一样的。任何对 HKEY_CURRENT_USER根键中的信息的修改都会导致对 HKEY_USERS_DEFAULT中子项的修改</p>
-<hr>
-<h2 id="第五节-HKEY-LOCAL-MACHINE"><a href="#第五节-HKEY-LOCAL-MACHINE" class="headerlink" title="第五节 HKEY_LOCAL_MACHINE"></a>第五节 HKEY_LOCAL_MACHINE</h2><p>此根键中存放的是用来控制系统和软件的设置，由于这些设置是针对那些使用Windows系统的用户而设置的，是一个公共配置信息，所以它与具体的用户没多大关系。</p>
-<h3 id="1、HARDWARE子项："><a href="#1、HARDWARE子项：" class="headerlink" title="1、HARDWARE子项："></a>1、HARDWARE子项：</h3><p>该子项包括了系统使用的浮点处理器、串口等信息：ACPI:存放高级电源管理接口数据；DEVICEMAP：用于存放设备映射；DEscriptION：存放有关系统信息；<br>RESOURCEMAP：用于存放资源列表</p>
-<h3 id="2、SAM子项："><a href="#2、SAM子项：" class="headerlink" title="2、SAM子项："></a>2、SAM子项：</h3><p>哈哈，这部分被保护了，看不到</p>
-<h3 id="3、SECURITY子项："><a href="#3、SECURITY子项：" class="headerlink" title="3、SECURITY子项："></a>3、SECURITY子项：</h3><p>该子项只是为将来的高级功能而预留的</p>
-<h3 id="4、SOFTWARE子项："><a href="#4、SOFTWARE子项：" class="headerlink" title="4、SOFTWARE子项："></a>4、SOFTWARE子项：</h3><p>该子项中保留的是所有已安装的32位应用程序的信息，各个程序的控制信息分别安装在相应的子项中，由于不同的计算机安装的应用程序互不相同，因此这个子项下面的子项信息也不完全一样。</p>
-<h3 id="5、SYSTEM子项："><a href="#5、SYSTEM子项：" class="headerlink" title="5、SYSTEM子项："></a>5、SYSTEM子项：</h3><p>该子项是启动时所需的信息和修复系统时所需要的信息：currentcontrol:保存了当前驱动程序控制集中的所有信息</p>
-<hr>
-<h2 id="第六节-HKEY-USERS"><a href="#第六节-HKEY-USERS" class="headerlink" title="第六节 HKEY_USERS"></a>第六节 HKEY_USERS</h2><p>此根键中保存的是默认用户（default)，当前登录用户和软件（software) 的信息，其中DEFAULT子项是其中最重要的，它的配置是针对未来将会被创建的新用户的。新用户根据默认用户的配置信息来生成自己的配置文件，该配置文件包括环境、屏幕和声<br>音等多种信息，其中常用的3项有：</p>
-<h3 id="1、AppEvents子项："><a href="#1、AppEvents子项：" class="headerlink" title="1、AppEvents子项："></a>1、AppEvents子项：</h3><p>它包括了各种应用事件的列表：EventLabels:按字母顺序列表；Schemes:按事件分类列表</p>
-<h3 id="2、Control-Panel子项："><a href="#2、Control-Panel子项：" class="headerlink" title="2、Control Panel子项："></a>2、Control Panel子项：</h3><p>它包括内容与桌面、光标、键盘和鼠标等设置有关</p>
-<h3 id="3、Keyboard-layout子项："><a href="#3、Keyboard-layout子项：" class="headerlink" title="3、Keyboard layout子项："></a>3、Keyboard layout子项：</h3><p>用于键盘的布局（如语言的加载顺序等）<br>    Preload:语言的加载顺序<br>    Substitutes:设置可替换的键盘语言布局<br>    Toggle:用于选择键盘语言</p>
-<hr>
-<h2 id="第七节-HKEY-CURRENT-CONFIG"><a href="#第七节-HKEY-CURRENT-CONFIG" class="headerlink" title="第七节 HKEY_CURRENT_CONFIG"></a>第七节 HKEY_CURRENT_CONFIG</h2><p>此根键存放的是当前配置的文件信息。<br>实际上细心的读者已经发现了，五大根键实际上并不是五个，现在把这个做了总结<br>我们都知道用regedit或regedit32都可以打开注册表文件，在XP系统下的时候，这两种方法其实都是一样的，当我们打开注册表后看到了类似资源管理器的东西，这里面都有什么呢？<br>HKEY_CLASSES_ROOT<br>HKEY_CURRENT_USER<br>HKEY_LOCAL_MACHINE<br>HKEY_USERS<br>HKEY_CURRENT_CONFIG<br>看是五个分支，其实就是HKEY_LOCAL_MACHINE、HKEY_USERS这两个才是真正的注册表键，其它都是从某个分支映射出来的，<br>相当于快捷方式或是别名，这样的话看注册表就简单了许多了，现在说一下每个分支的作用：</p>
-<h3 id="HKEY-CLASSES-ROOT："><a href="#HKEY-CLASSES-ROOT：" class="headerlink" title="HKEY_CLASSES_ROOT："></a>HKEY_CLASSES_ROOT：</h3><p>列出当前计算机注册的所有COM服务器和与应用程序相关联的所有文件扩展名。</p>
-<h3 id="HKEY-CURRENT-USER："><a href="#HKEY-CURRENT-USER：" class="headerlink" title="HKEY_CURRENT_USER："></a>HKEY_CURRENT_USER：</h3><p>保存着当前登录到由这个注册服务的计算机上的用户配置文件。</p>
-<h3 id="HKEY-LOCAL-MACHINE："><a href="#HKEY-LOCAL-MACHINE：" class="headerlink" title="HKEY_LOCAL_MACHINE："></a>HKEY_LOCAL_MACHINE：</h3><p>保存操作系统及硬件相关信息的配置单元，它是一个公共的配置信息与具体用户无关，其中关键是两个键值 </p>
-<h4 id="SOFTWARE："><a href="#SOFTWARE：" class="headerlink" title="SOFTWARE："></a>SOFTWARE：</h4><p>保存着与这台电脑中安装的应用程序相关的设置。</p>
-<h4 id="SYSTEM："><a href="#SYSTEM：" class="headerlink" title="SYSTEM："></a>SYSTEM：</h4><p>WINDOWS所装载的设备驱动程序以及当WINDOWS启动时所需要的各种参数。 </p>
-<h3 id="HKEY-USERS："><a href="#HKEY-USERS：" class="headerlink" title="HKEY_USERS："></a>HKEY_USERS：</h3><p>包含当前计算机所有用户配置文件。</p>
-<h3 id="HKEY-CURRENT-CONFIG："><a href="#HKEY-CURRENT-CONFIG：" class="headerlink" title="HKEY_CURRENT_CONFIG："></a>HKEY_CURRENT_CONFIG：</h3><p> 计算机当前会话中的所有硬件配置信息。</p>
-<hr>
-<h2 id="第八节-注册表的基本操作"><a href="#第八节-注册表的基本操作" class="headerlink" title="第八节  注册表的基本操作"></a>第八节  注册表的基本操作</h2><p>1、创建项和项值<br>2、更值项的数据<br>3、删除项、子项或值项<br>4、查找项、值项或数据<br>注册表中常用的数据类型有5种：<br>二进制值（reg_binary）:多数硬件信息以二进制数据存储，而以十六进制格式显示在注册表编辑器中<br>字符串值（reg_sz）:包括字符串的注册表键，使用字符串数据类型<br>双字节值（reg_dword）:是32位信息常显示成4个字节。它在出错控制功能上用处极大，其数据一般以十六进制格式显示在注册<br>表编辑器中。<br>多字符串值(reg_multi_sz):允许将一系列项目作为单独的一个值使用。对于多种网络协议、多个项目、设备列表以及其他类似<br>的列表项目来说，可以使用多字符串值<br>可扩充字符串值（reg_expand_sz）：代表一个可扩展的字符串</p>
-<hr>
-<h2 id="第九节-注册表破坏的现象及原因"><a href="#第九节-注册表破坏的现象及原因" class="headerlink" title="第九节  注册表破坏的现象及原因"></a>第九节  注册表破坏的现象及原因</h2><h3 id="一、注册表破坏后的常见现象"><a href="#一、注册表破坏后的常见现象" class="headerlink" title="一、注册表破坏后的常见现象"></a>一、注册表破坏后的常见现象</h3><p>1、无法启动系统<br>2、无法运行或正常运行合法的应用程序<br>3、找不到启动系统或运行应用程序所需的文件<br>4、没有访问应用程序的权限<br>5、不能正确安装或装入驱动程序<br>6、不能进行网络连接<br>7、注册表条目有错误\</p>
-<h3 id="二、注册表被破坏的原因"><a href="#二、注册表被破坏的原因" class="headerlink" title="二、注册表被破坏的原因"></a>二、注册表被破坏的原因</h3><p>1、应用程序错误：这个出现的时候比较多，因为我们知道应用程序或多或少的时候都有错误，都有可能导致不同的后果；另外<br>在系统中安装过多的软件后，有可能出现彼此之间的冲突。<br>2、驱动程序不兼容：其实我发现好多出在系统自动安装的驱动程序上，如果你本身有驱动程序盘的话，还是用专业的比较好一<br>些<br>3、硬件问题：这里面好我问题出现在硬件质量上，比如硬盘或内存质量不过关造成读写错误，或超频或CMOS或病毒等<br>4、误操作：这个大家不知出现了没有，您的误操作可能会导致注册表出现错误，有的时候甚至会很严重的。</p>
-<hr>
-<h2 id="第十节-备份注册表"><a href="#第十节-备份注册表" class="headerlink" title="第十节  备份注册表"></a>第十节  备份注册表</h2><h3 id="一、手工备份注册表"><a href="#一、手工备份注册表" class="headerlink" title="一、手工备份注册表"></a>一、手工备份注册表</h3><p>大家把以下几个文件直接复制到另一个文件夹就可以了<br>1、在windows\system32\config下有以下几个文件用以保存系统配置：SAM,SYSTEM,SOFYWARE,DEFAULT<br>2、在Documetents and settings\username文件夹中保存用户配置文件：NETUSER.DAT,当然对应的LOG文件应该一块保存\</p>
-<h3 id="二、注册表导出法导出注册表"><a href="#二、注册表导出法导出注册表" class="headerlink" title="二、注册表导出法导出注册表"></a>二、注册表导出法导出注册表</h3><p>在文件中选择导出命令,回答文件名和位置，OK了</p>
-<h3 id="三、通过系统备份功能进行备份"><a href="#三、通过系统备份功能进行备份" class="headerlink" title="三、通过系统备份功能进行备份"></a>三、通过系统备份功能进行备份</h3><p>1、选择开始—程序—附件—系统工具—备份<br>2、选择高级模式点下一步<br>3、选择system state(系统状态),在底下文件名中位置中回答路径及文件名<br>4、点击开始备份</p>
-<hr>
-<h2 id="第十一节-恢复注册表"><a href="#第十一节-恢复注册表" class="headerlink" title="第十一节  恢复注册表"></a>第十一节  恢复注册表</h2><p>1、重新启动系统恢复注册表<br> 一重启就可以修正各种在注册表中出现的错误了，但是以硬盘上的注册表的信息正确为前提的。<br>2、手工恢复注册表<br> 把上节中复制出来的文件再弄回去就OK了。<br>3、注册表导入法恢复<br> 首先上节中的导出的文件你要有啊，然后运行regedit.exe文件，文件中的导入，选择要导入的注册表文件，点找开就可以了<br>4、利用高级启动选项恢复注册表<br> 重启计算机，启动时按F8键进入高级选项菜单， 选择最后一次正确的配置，回车了，OK<br>5、通过局域网来恢复注册表<br> 这个我们一般是指连入局域网的某一计算机（我们假设叫aaaaa）的注册表被管理员锁了，但有另一台计算机（我们假设叫B）的注册表可以用，现在我们用B来解除A的锁定。<br>进入B的注册表，选择文件中的连接网络注册表，在查找位置中输入aaaaa，这时注册表中出现了songxiang计算机的注册表，修改键值：aaaaa\HEKY_USERS\S-1-5-21-823518204-688789844-842925246-500\Software\Microsoft\Windows\CurrentVersion\Policies\System下的disableregistrytools值改为0就可以了。S-1-5-21-823518204-688789844-842925246-500这一大堆数是超级管理员，重新安装系统。</p>
-<hr>
-<h2 id="第十二节-注册表的优化"><a href="#第十二节-注册表的优化" class="headerlink" title="第十二节  注册表的优化"></a>第十二节  注册表的优化</h2><p>一、我们为什么要优化注册表<br>1、在计算机使用过程中可能经常添加或删除应用程序；在上网时遇到恶意网站，向注册表强行添加信息；<br>2、原来的应用程序卸载后注册表没删除，启动时出现没找到某某应用程序<br>3、多余注册表的子项可能造成浪费或降低启动速度<br>二、手工优化注册表<br>1、清除多余的DLL文件<br>大家找到这个项:<br>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\ShareDLLs，在这个项下存放的<br>是共享的DLL信息，注意看括号里面的数据，它表示共享文件的数目，如果为0，那么删除掉吧<br>2、安装卸载应用程序的垃圾信息<br>这个主要是一些非法卸载应用程序导致的，我们首先要知道什么程序被非法卸载了，这个很好办，你自己现在正使着的你是知道的，其余的就没用了注册表位置：HKEY_CURRENT_USER\Software HKEY_LOCAL_MACHINE\Software<br>看到没用的就全删了就行了<br>3、系统安装时产生的无用信息：去掉吧，有可能启动变快呢<br>3.1、删除多余时区（我是只留北京时区）<br>位置：HKEY_LOCAL_MACHINE\Software\Microsoft\WindowsNT\CurrentVersion\Time Zones<br>如果你只要北京时区的话，那么除了China Standard Time，其余的都删了吧<br>3.2、清除国家列表（我只留中华人民共和国）<br>位置：HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Telephony\Country List<br>保留86号文件夹，其余删<br>3.3、清除多余的语言代码（我只保留英语—0409和中文—0804）<br>位置：HKEY_LOCAL_MACHINE\SYSTEM\CurrnetControlSet\Control\Nls\Locale<br>没用的删了吧<br>3.4、删除多余的键盘布局：<br>位置：HKEY_LOCAL_MACHINE\SYSTEM\CurrnetControlSet\Control\Keyboard Layouts<br>你可以把每个键值都打开看看，不需要的输入法删除即可<br>3.5、删除失效的文件关联<br>位置：HKEY_CLASSES_ROOT<br>主键可分为两部分：第一部分用来定义文件类型；第二部分与第一部分一一对应，用于记录打开<br>文件的应用程序。一般，在打开第二部分的可疑子项后，若该键下的COMMAND下没有内容，就可以删掉了</p>
-<hr>
-<h2 id="第十三节-个性化设置"><a href="#第十三节-个性化设置" class="headerlink" title="第十三节  个性化设置"></a>第十三节  个性化设置</h2><p>1、去掉桌面快捷方式上的小键头<br>位置：HKEY_CLASSES_ROOT\LNKFILE项 ：IsShortcut<br>操作：删除此项<br>2、隐藏桌面上的所有图标<br>位置:HKEY_CURRENT_USER\Software\Windows\CurrentVersion\Policies\Explorer<br>新建：NoDesktop（双字节）<br>操作：值设为1<br>3、修改桌面上“回收站”的名字及图标<br>位置：<br>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID{645FF040-5081-101B-9F08-00AA002F954E}（这个大家也可直接查找“回收站)<br>修改：（默认）一项随便换个名字就可以了<br>然后展开此项，选择DEfaultIcon<br>这时大家看到有3个子项，意思吗一看就明白了<br>如果想改变图标时，只需将路径和文件名改了即可，比如改为”d:\tt.ico”<br>4 、去掉桌面上的网上邻居<br>位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer<br>新建：NoNetHood（双字节）值： 1<br>5、在桌面上显示系统版本号<br>位置：HKEY_CURRENT_USER\Control Panel\Desktop<br>项：PaintDesktopVersion<br>修改：将值改为1<br>6、改变窗口按钮字体的颜色<br>位置：HKEY_CURRENT_USER\Control Pannel\Colors<br>键值：ButtonText<br>修改：大家知道PS吧，比如改为红么(255,0,0)<br>7、屏蔽桌面上的IE图标<br>位置:HKEY_CURRENT_USER\Software\Windows\CurrentVersion\Policies\Explorer<br>新建值项：NoInternetIcon<br>修改：1<br>8、禁止更改桌面墙纸<br>位置:HKEY_CURRENT_USER\Software\Windows\CurrentVersion\Policies\Explorer<br>新建项值：NoChangingWallPaper(双字节）<br>修改：1<br>9、设置登录背景<br>位置：HKEY_USERS\DEFAULT\ControlPanel\Desktop<br>键值：WallPaper<br>修改：把背景图片一写就OK了（比如C:\aa.bmp）<br>—————-以上需重启计算机—————-<br>10、更改我的电脑的提示信息<br>位置：<br>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID{20D04FE0-3AEA-1069-A2D8-08002B30309D}<br>键值：InfoTip<br>修改：哈，随便打吧，我打成了“这是我的电脑噢”<br>11、更改回收站的提示信息位置：<br>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID{645FF040-5081-101B-9F08-00AA002F954E}<br>键值：InfoTip<br>修改：跟上面一样,自己改吧<br>12、更改IE的提示信息<br>位置：<br>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID{871C5380-42A0-1069-A2EA-08002B30309D}<br>键值：InfoTip<br>修改：同上<br>13、更改网上邻居的提示信息<br>位置：<br>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID{208D2C60-3AEA-1069-A2D7-08002B30309D}<br>键值：InfoTip<br>修改：同上<br>14、更改我的文档的提示信息<br>位置：<br>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID{450D8FBA-AD25-11D0-98A8-0800361B1103}<br>键值：InfoTip<br>修改：同上<br>15、更改任务计划提示信息<br>位置：<br>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID{D6277990-4C6A-11CF-8D87-00AA0060F5BF}<br>键值：InfoTip<br>修改：同上<br>16、改变桌面图标顺序<br>位置：<br>HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID{450D8FBA-AD25-11D0-98A8-0800361B1103}<br>键值：SortOrderIndex<br>修改：48（我的文档在第一位）<br>54（我的电脑在第一位）<br>17、禁止帮助提示信息(需重启）<br>位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced<br>键值：showinfotip<br>修改：0<br>18、用真彩色显示图标(需重启）<br>位置：HKEY_CURRENT_USER\Control<br>Panel\Desktop\WindowMetrics<br>键值：Shell Icon BPP<br>修改：32<br>19、更改图标显示尺寸(需重启）<br>位置：HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics<br>键值：Shell Icon SIZE<br>修改：在显示器分辨率为1024<em>768时可改为：48；在显示器分辨率为1600</em>1200时可改为：64<br>20、自动清除“文档”菜单中的历史记录（需重启）<br>位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer<br>新建：CleanReccentDocsOn-Exit<br>(REG-DWORD)值：1<br>21、禁止“文档”的历史记录（需重启）<br>位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer<br>新建：NoReccentDocsHistory<br>(REG-DWORD)值：1<br>22、去掉开始菜单的“文档”项（需重启）<br>位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer<br>新建：NoReccentDocsMenu<br>(REG-DWORD)值：1<br>23、去掉开始菜单的“查找”项（需重启）<br>位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer<br>新建：NoFind<br>(REG-DWORD)值：1<br>24、去掉开始菜单的“运行”项（需重启）<br>位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer<br>新建：NoRun<br>(REG-DWORD)值：1<br>25、禁止用户更改“开始”菜单（需重）<br>位置：<br>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer<br>新建：NoChangeStartMenu<br>(REG-DWORD)值：1<br>26、禁止显示开始菜单中的windows update项（需重启）<br>位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer<br>新建：NoWindowsUpdate<br>(REG-DWORD)值：1<br>27、屏蔽开始菜单中的“关闭计算机”项（需重启）<br>位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer<br>新建：NoClose (REG-DWORD)值：1<br>28、加快“开始”菜单与“任务栏”的速度<br>位置：HKEY_CURRENT_USER\Control Panel\Desktop<br>键值：MenuShowDelay<br>值：数值资料改为100或更小（默认值为：400），建议不要使用0，因为如此一来只要鼠标一不小心触碰到“所有程序”，整条菜单就会跑出来，那这乱了套。<br>29、为回收站的右键菜单增加“删除”和“重命名”<br>位置：HKEY_CLASSES_ROOT\CLSID{645FF040-5081-101B-9F08-00AA002F954E}\ShellFolder<br>键值：Attributes<br>值：70 01 00 20<br>30、为右键菜单添加“在新窗口打开”命令<br>位置：HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell<br>新建子项：NewWindow<br>修改：将默认值项值改为“在新窗口打开”<br>继续：在NewWindow项下新建个子项command<br>修改：将默认值项值改为explorer.exe<br>31、为右键菜单添加“快速关闭计算机”命令<br>位置：HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell<br>新建子项：<br>快速关闭计算机<br>修改：将默认值项值改为“快速关闭计算机”<br>继续：在NewWindow项下新建个子项command<br>修改：将默认值项值改为”c:\windows\rundll32.exe user.exe,exitwindowsexec”<br>32、禁止任务栏的快捷菜单（需重启)\<br>位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer<br>新建键值：NoTrayContextMenu<br>(REG_DWORD)值：1<br>33、将任务栏显示时间的地方改为要显示的文字（需重启）<br>位置：HKEY_CURRENT_USER\Control Panel\International<br>键值：STimeFormat<br>修改：自己喜欢什么文字就改成什么吧<br>34、禁止使用任务栏（需重启）<br>位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer<br>新建键值：NoSetTaskBar<br>(REG_DWORD)修改：1</p>
-<hr>
-<p>第十四课  系统设置(控制面板常用选项设置，系统性能优化设置)<br>1、禁用“控制面板”中的“显示”选项<br>位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies<br>新建项值：System<br>新建值项：NodispCPL<br>（REG_DWORD）<br>值：1<br>2、屏蔽显示选项中的“屏幕保护程序”<br>位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System<br>新建值项：NoDispScrSavPage<br>   （REG_DWORD）<br>值：1<br>3、屏蔽显示选项中的“外观”<br>位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System<br>新建值项：NoDispAppearancePage<br>   （REG_DWORD）值：1<br>4、屏蔽显示选项中的“设置”<br>位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System<br>新建值项：NoDispSettingsPage<br>   （REG_DWORD）值：1<br>5、屏蔽显示选项中的“屏幕保护程序密码”<br>位置：HKEY_CURRENT_USER\Software\Policies\Microsoft<br>新建项：Control Panel<br>再新建子项：Desktop<br>新建值：ScreenSaverIsSecure (REG_DWORD)值：1<br>6、禁止使用“添加删除程序”项<br>位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies<br>新建子项：Uninstall<br>新建值项：NoAddRemovePrograms (REG_DWORD)值：1<br>7、屏蔽“添加删除程序”中的“更改或删除程序”选项<br>位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\uninstall<br>新建值项：NoRemovePage  (REG_DWORD)值：1<br>8、屏蔽“添加删除程序”中的“添加新程序”选项<br>位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\uninstall<br>新建值项：NoAddpage (REG_DWORD)值：1<br>9、屏蔽“添加删除程序”中的“添加或删除windows组件”选项<br>位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\uninstall<br>新建值项：NoWindowsSetupPage (REG_DWORD)值：1<br>10、屏蔽“添加删除程序”中的“更改或删除程序”中的“单击此处获得支持信息”选项<br>位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\uninstall<br>新建值项：NoSupportInfo (REG_DWORD)值：1<br>11、屏蔽“更改或删除程序”中的“添加新程序”中的“从CD-ROM或软盘安装程序”选项<br>位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\uninstall<br>新建值项：NoAddFromCDorFloppy (REG_DWORD)值：1<br>12、屏蔽“更改或删除程序”中的“添加新程序”中的“从Microsoft添加程序程序”选项<br>位置：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\uninstall<br>新建值项：NoAddFromInternet (REG_DWORD)值：1<br>13、设置windows的关机时间<br>位置：HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control<br>值项：WaitToKillServiceTimeout<br>修改：它以毫秒为单位，请自行设置<br>14、更改windows服务启动的顺序<br>位置：HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServiceGroupOrder<br>值项：ServiceGroupOrder<br>修改：按你想要的顺序自行输入<br>15、更改windows启动时运行的程序<br>位置：HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session<br>Manager<br>值项：BootExecite<br>修改：自行输入一行启动时要执行的命令即可<br>16、删除多余的DLL文件<br>位置：<br>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\SharedDlls<br>值项：这里好多了，都是DLL的，注意看好了，所有是0的都是没用的，删了即可，然后再将相应的系统文件夹中的文件删除<br>17、删除不必要的自启程序<br>位置：HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run<br>值项：这里面列出的都是启动项，不要的可以删掉，他和msconig中列出的是一样的<br>18、清除注册表垃圾（需重启）<br>位置1：HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall<br>位置2：HKEY_LOCAL_MACHINE\SOFTWARE<br>操作：很简单了，没用的删了吧<br>19、自动刷新窗口（需重启）<br>位置：HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Update<br>键值：UpdateMode<br>修改：0<br>20、更改开始菜单存放的目录（需重启）<br>位置：HKEY_USERS.\DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders<br>键值：Start Menu<br>修改：把要改到的路径添上就可以了,并将原源件复制到目标文件夹下<br>21、更改开始菜单中的程序的存放目录（需重启）<br>位置：HKEY_USERS.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders<br>键值：Program<br>修改：把要改到的路径添上就可以了，并将原源件复制到目标文件夹下<br>22、更改开始菜单中的程序里的应用程序存放目录（需重启）<br>位置：HKEY_USERS.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders<br>键值：appdate<br>修改：把要改到的路径添上就可以了，并将原源件复制到目标文件夹下<br>23、更改开始菜单中的程序里的发送到存放目录（需重启）<br>位置：HKEY_USERS.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders<br>键值：SendTo<br>修改：把要改到的路径添上就可以了，并将原源件复制到目标文件夹下,其实我们也可以在这里建立一个新的发送到项目，比如发送到你的U盘<br>24、更改开始菜单中的程序里的启动程序存放目录（需重启）<br>位置：HKEY_USERS.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders<br>键值：StartUp<br>修改：把要改到的路径添上就可以了，并将原源件复制到目标文件夹下<br>25、更改网页历史记录存放目录（需重启）<br>位置：HKEY_USERS.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders<br>键值：History<br>修改：把要改到的路径添上就可以了，并将原源件复制到目标文件夹下<br>26、更改我的文档存放目录（需重启）<br>位置：HKEY_USERS.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders<br>键值：Personal<br>修改：把要改到的路径添上就可以了，并将原源件复制到目标文件夹下<br>27、更改新建文件的存放目录（需重启）<br>位置：HKEY_USERS.DEFAULT\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders<br>键值：Templates<br>修改：把要改到的路径添上就可以了<br>28、在我的电脑中显示网络连接<br>位置：HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace<br>新建子项：{992CFFA0-F557-101A-88EC-00DD010CCC48}<br>修改默认值：网络连接<br>29、在我的电脑中显示打印机和传真<br>位置：HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace<br>新建子项：{2227A280-3AEA-1069-A2DE-08002B3039D}<br>修改默认值：打印机和传真<br>30、打开或关闭启动优化功能（启动时碎片整理）<br>位置：HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Dfrg\BootOptimizeFunction<br>键值：Enable<br>修改：Y开启N不开启<br>31、加快程序运行速度(需要重启)<br>位置：HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem<br>新建值项：configfileallocsize<br>值：1f4<br>32、缩短关闭无响应程序的等待时间（需重启）<br>位置：HKEY_USERS.DEFAULT\Control Panel\Desktop<br>值项：WaitToKillTimeout<br>修改：增大一点可以加快处理程序的速度<br>33、关机时自动删除交换文件<br>位置：HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\Session Manager\Memory Management<br>值：ClearPageFileAtShutdown<br>修改：1<br>34、自动关闭计算机（指关机后停在关机界面）<br>位置：HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows<br>NT\CurrentVersion\Winlogon<br>值：PowerdownAfterShutdown<br>修改：1</p>
-<hr>
-<h2 id="第十五课-硬件设置"><a href="#第十五课-硬件设置" class="headerlink" title="第十五课  硬件设置"></a>第十五课  硬件设置</h2><p>1、启用CPU的二级缓存（需重启）<br>位置：HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management<br>值项：secondleveldatacache<br>修改：我改成了200了，你呢<br>2、修改认证标识（拥有个性化的CPU）<br>位置：HKEY_LOCAL_MACHINE\HARDWARE\DEscriptION\System\CentralProcessor\0<br>值项：ProcessorNameString<br>修改：随便改，改成了奔8CPU,9.99GHZ主频<br>3、更改系统属性对话框里的CPU信息<br>位置：HKEY_LOCAL_MACHINE\HARDWARE\DEscriptION\System\CentralProcessor\0<br>值项：VendorIdentifer<br>修改：随便改<br>4、清除内存中不使用的DLL文件（需重启）<br>位置：HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer<br>新建值项：Always UnloadDll<br>(REG-DWORD)值：1<br>5、启动自动优化磁盘功能（需重启）<br>位置：HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Dfrg\BootOptimizeFunction<br>值项：Enable<br>修改：Yes</p>
-<p>参考文献：<a target="_blank" rel="noopener" href="https://blog.csdn.net/wz_cow/article/details/88835569">https://blog.csdn.net/wz_cow/article/details/88835569</a></p>
+<p>参考文献：<a target="_blank" rel="noopener" href="http://www.runoob.com/">www.runoob.com</a></p>
 
                 
             </div>
@@ -591,7 +551,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://Tom-000.github.io/2021/03/05/zhu-ce-biao/">http://Tom-000.github.io/2021/03/05/zhu-ce-biao/</a>
+                    <a href="http://Tom-000.github.io/2021/03/11/linux-xi-tong-mu-lu/">http://Tom-000.github.io/2021/03/11/linux-xi-tong-mu-lu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -629,8 +589,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Windows-%E6%B3%A8%E5%86%8C%E8%A1%A8/">
-                                    <span class="chip bg-color">-Windows -注册表</span>
+                                <a href="/tags/Linux-%E7%B3%BB%E7%BB%9F%E7%9B%AE%E5%BD%95-%E7%AC%94%E8%AE%B0/">
+                                    <span class="chip bg-color">-Linux -系统目录 -笔记</span>
                                 </a>
                             
                         </div>
@@ -1068,9 +1028,60 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2021/03/11/linux-xi-tong-mu-lu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Linux系统目录结构">
+                        
+                        <span class="card-title">Linux系统目录结构</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-11
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Linux/" class="post-category">
+                                    -Linux
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Linux-%E7%B3%BB%E7%BB%9F%E7%9B%AE%E5%BD%95-%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">-Linux -系统目录 -笔记</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2021/03/05/duan-kou/">
                     <div class="card-image">
@@ -1088,9 +1099,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1108,55 +1119,6 @@
                     
                     <a href="/tags/Windows-%E7%AB%AF%E5%8F%A3/">
                         <span class="chip bg-color">-Windows -端口</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/03/05/wen-xue/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="明天，还远吗？">
-                        
-                        <span class="card-title">明天，还远吗？</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-05
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%96%87%E5%AD%A6/" class="post-category">
-                                    -文学
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E9%9A%8F%E8%AE%B0-%E6%9C%AA%E6%9D%A5/">
-                        <span class="chip bg-color">-随记 -未来</span>
                     </a>
                     
                 </div>

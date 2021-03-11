@@ -6,7 +6,7 @@
   <link href="http://tom-000.github.io/atom.xml" rel="self"/>
   
   <link href="http://tom-000.github.io/"/>
-  <updated>2021-02-28T12:10:58.875Z</updated>
+  <updated>2021-03-11T11:22:12.353Z</updated>
   <id>http://tom-000.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux系统目录结构</title>
+    <link href="http://tom-000.github.io/2021/03/11/linux-xi-tong-mu-lu/"/>
+    <id>http://tom-000.github.io/2021/03/11/linux-xi-tong-mu-lu/</id>
+    <published>2021-03-11T10:50:51.400Z</published>
+    <updated>2021-03-11T11:22:12.353Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;第一节-树状目录结构&quot;&gt;&lt;a href=&quot;#第一节-树状目录结构&quot; class=&quot;headerlink&quot; title=&quot;第一节  树状目录结构&quot;&gt;&lt;/a&gt;第一节  树状目录结构&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/y.jpg&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="-Linux" scheme="http://tom-000.github.io/categories/Linux/"/>
+    
+    
+    <category term="-Linux -系统目录 -笔记" scheme="http://tom-000.github.io/tags/Linux-%E7%B3%BB%E7%BB%9F%E7%9B%AE%E5%BD%95-%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>Windows端口说明</title>
