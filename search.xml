@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>安装Mysql</title>
+      <link href="2021/04/03/mysql-an-zhuang-jiao-cheng/"/>
+      <url>2021/04/03/mysql-an-zhuang-jiao-cheng/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>目前网上有大量的安装教程，但有的实用性不高，下面博主亲测有效，话不多说，go</p><h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><p>如果电脑中以前安装过MySQL可能会出现安装不成功，所以在这里需要先说一下卸载，电脑首先卸载和更改程序中卸载，然后到C:\盘下的Program Files和ProgramData中找到MySQL文件夹，并干掉就ok了</p><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>官网下载：<a href="https://dev.mysql.com/downloads/mysql/%E7%89%88%E6%9C%AC%E4%BB%BB%E6%84%8F">https://dev.mysql.com/downloads/mysql/版本任意</a><br>点击download，选择的是安装版（mysql -install-community）<br>选择不登陆下载(No，thanks…) </p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>1.双击运行下载好的xxx.msi，程序运行需要一些时间<br>2、在打开的窗口中，选择接受安装协议，单击“next”继续安装<br>3.进入类型选择页面，需要mysql云服务就选择了developer default，如果只想安装mysql server的就选择custom模式<br>developer default（开发者默认）：安装mysql开发所需的所有产品<br>server only（服务器）：只安装mysql服务器产品<br>client only（客户端）：只安装没有服务器的mysql客户端产品<br>full（完全）：安装所有包含的mysql产品和功能<br>custom（手动）：手动选择系统上应安装的产品<br>4.开发者默认模式检测安装不成功，能Execute一下就执行一下，执行错误就直接点击下一步进入，无影响<br>5.在安装所选界面能看到我们接下来所需要安装的程序，点击execute<br>6.程序安装完成之后，点击nex<br>7.在product configutration（产品配置）页面能看到需要配置的程序，点击next<br>8.设置服务器配置类型以及连接端口：继续next<br>Config Type:选择Development Machine，用于小型以及学习所用足够了。<br>9.配置root的密码（该密码要记住），系统提示这密码虚弱<br>10.添加其他管理员，点击add user 输入账号密码点击ok（如果添加的管理员只允许在本地登录就将host改成local），回到界面之后点击next<br>11.配置mysql在windows系统中的名字，是否选择开机启动mysql服务，其它的没进行修改，点击”Next”<br>12.配置插件和扩展页面没进行修改直接下一步<br>13.先配置mysql server的类型以及网络：type and networking（类型和网络），这里有两种mysql server类型，选择第一种类型点击next<br>14.Mysql server:apply configuration（应用配置页面），选择execute进行安装配置<br>15.mysql server应用配置的log，选择finish<br>16.安装程序又回到了product configutration（产品配置）页面，此时我们看到mysql server安装成功的显示，继续下一步<br>17.配置mysql router：勾选configure mysql route for innoDB cluster之后输入密码<br>18.Mysql router :apply configuration（应用配置页面）点击execute<br>19.安装完成之后，点击选择finish<br>20.检测root密码<br>21.安装一些server，老规矩点击execute，完成之后点击finish<br>22.程序回到产品配置页面。继续下一步<br>23.安装程序完成界面<br>24.双击运行之前下载的安装包，能看到我们所安装的产品</p><h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><p>1.上面安装的是时候我们看到mysql默认安装路径是：C:\Program Files\MySQL\MySQL Server 5.7<br>我的电脑右键—&gt;属性-&gt;高级系统设置-&gt;编辑系统变量-&gt;新建MYSQL_HOME,将安装目录输入<br>2.系统变量下的path：输入%MYSQL_HOME%\bin<br>3.打开cmd输入mysql –u root –p<br>4.输入root的密码</p><h2 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h2><p>以上有些步骤顺序可能和你电脑的不一致，但总体下来差不多，遇到不太确定的步骤，点Next就行，我是根据下面菜鸟教程安装的，懒得再安装一遍，所以没截图，下面附上源地址（有图）。以后我还会发布MySQL精简学习笔记，希望大家多多关注<br>原文链接：<a href="https://www.cnblogs.com/xiaodingdong/p/7223245.html">https://www.cnblogs.com/xiaodingdong/p/7223245.html</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> -MySQL </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> -Windows -MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Linux系统目录结构</title>
       <link href="2021/03/11/linux-xi-tong-mu-lu/"/>
       <url>2021/03/11/linux-xi-tong-mu-lu/</url>
