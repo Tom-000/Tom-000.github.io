@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>Web_4</title>
+      <link href="2021/06/13/ctfshow/"/>
+      <url>2021/06/13/ctfshow/</url>
+      
+        <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>题目：考查文件包含漏洞<br><img src="/images/c1.png" alt="alt"><br>wp：和web3一毛一样，构造payload=url+?/etc/passwd,发现可以读到，<br><img src="/images/c2.png" alt="alt"><br>继续故技重施，通过data：//通配符查找目录下的所有文件，但发现被过滤了<br><img src="/images/c3.png" alt="alt"><br>包含日志文件试试，构造payload=….?url=/var/log/nginx/access.log,结合pb<br><img src="/images/c4.png" alt="alt"><br>注意请求小马的位置，发送后，结合蚁剑接后门，在www目录下找到flag.txt<br><img src="/images/c5.png" alt="alt"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> -ctfshow </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> -CTF </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="2021/05/13/bugku/"/>
+      <url>2021/05/13/bugku/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>安装Mysql</title>
       <link href="2021/04/03/mysql-an-zhuang-jiao-cheng/"/>
       <url>2021/04/03/mysql-an-zhuang-jiao-cheng/</url>
