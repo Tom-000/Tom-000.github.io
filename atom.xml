@@ -6,7 +6,7 @@
   <link href="http://tom-000.github.io/atom.xml" rel="self"/>
   
   <link href="http://tom-000.github.io/"/>
-  <updated>2021-06-13T10:09:27.138Z</updated>
+  <updated>2021-06-13T10:16:56.128Z</updated>
   <id>http://tom-000.github.io/</id>
   
   <author>
@@ -17,18 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Web_4</title>
+    <title>ctfshow-Web_4</title>
     <link href="http://tom-000.github.io/2021/06/13/ctfshow/"/>
     <id>http://tom-000.github.io/2021/06/13/ctfshow/</id>
     <published>2021-06-13T09:56:10.298Z</published>
-    <updated>2021-06-13T10:09:27.138Z</updated>
+    <updated>2021-06-13T10:16:56.128Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;题目：考查文件包含漏洞&lt;br&gt;&lt;img src=&quot;/images/c1.png&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;题目：考查文件包含漏洞&quot;&gt;&lt;a href=&quot;#题目：考查文件包含漏洞&quot; class=&quot;headerlink&quot; title=&quot;题目：考查文件包含漏洞&quot;&gt;&lt;/a&gt;题目：考查文件包含漏洞&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/c1.png&quot;</summary>
         
       
     
@@ -38,19 +38,6 @@
     
     
     <category term="-CTF" scheme="http://tom-000.github.io/tags/CTF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://tom-000.github.io/2021/05/13/bugku/"/>
-    <id>http://tom-000.github.io/2021/05/13/bugku/</id>
-    <published>2021-05-13T01:27:51.521Z</published>
-    <updated>2021-05-13T01:27:51.521Z</updated>
-    
-    
-    
-    
     
   </entry>
   
