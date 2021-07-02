@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>buuctf-Crypto部分WP</title>
+      <link href="2021/07/02/buuctf/"/>
+      <url>2021/07/02/buuctf/</url>
+      
+        <content type="html"><![CDATA[<h2 id="变异凯撒"><a href="#变异凯撒" class="headerlink" title="变异凯撒"></a>变异凯撒</h2><p>题目：<br><img src="/images/b1.png" alt="alt"></p><h1 id="wp："><a href="#wp：" class="headerlink" title="wp："></a>wp：</h1><p>常规凯撒加密每位字符向后移动相同的距离，该变异凯撒加密移动距离不同，对比得到<br><img src="/images/b2.png" alt="alt"><br>编写脚本<br><img src="/images/b3.png" alt="alt"><br>拿下！</p><h2 id="RSA"><a href="#RSA" class="headerlink" title="RSA"></a>RSA</h2><p>题目：<br><img src="/images/b4.png" alt="alt"></p><h1 id="wp"><a href="#wp" class="headerlink" title="wp:"></a>wp:</h1><p>由d*e mod f(n) =1，可求得私钥d<br><img src="/images/b5.png" alt="alt"><br>拿下！</p><h2 id="丢失的MD5"><a href="#丢失的MD5" class="headerlink" title="丢失的MD5"></a>丢失的MD5</h2><p>题目：<br><img src="/images/b6.png" alt="alt"></p><h1 id="wp：-1"><a href="#wp：-1" class="headerlink" title="wp："></a>wp：</h1><p>直接执行代码报错<br><img src="/images/b7.png" alt="alt"><br>显示需要在hash加密前需要编码，修改代码<br><img src="/images/b8.png" alt="alt"><br>拿下！</p><h2 id="信息化时代的步伐"><a href="#信息化时代的步伐" class="headerlink" title="信息化时代的步伐"></a>信息化时代的步伐</h2><p>题目：<br><img src="/images/b10.png" alt="alt"></p><h1 id="wp：-2"><a href="#wp：-2" class="headerlink" title="wp："></a>wp：</h1><p><img src="/images/b9.png" alt="alt"><br>又是啥幺蛾子密码，数字转中文，中文电码。。。<br><a href="http://code.mcdvisa.com/">http://code.mcdvisa.com/</a><br>拿下！</p><h2 id="windows系统密码"><a href="#windows系统密码" class="headerlink" title="windows系统密码"></a>windows系统密码</h2><h1 id="wp：-3"><a href="#wp：-3" class="headerlink" title="wp："></a>wp：</h1><p><img src="/images/b11.png" alt="alt"><br>文件是.hash后缀结尾的，但可以用记事本打开，系统密码一般是由MD5加密而成的，挨行试试，第一个不行，第二个ok，拿下！</p><h2 id="传统知识-古典密码"><a href="#传统知识-古典密码" class="headerlink" title="传统知识+古典密码"></a>传统知识+古典密码</h2><p>题目：<br><img src="/images/b12.png" alt="alt"></p><h1 id="wp：-4"><a href="#wp：-4" class="headerlink" title="wp："></a>wp：</h1><p>结合60甲子年表得到2830230817101630加一甲子60后得到<br>88/90/83/68/77/70/76/90<br><img src="/images/b13.png" alt="alt"><br>古典密码一般凯撒，栏栅啥的，密文一般为字母方式出现，不会是数字，然后ascll编码，脚本跑出来后是XZSDMFLZ，之后就是乱试了，具体栏栅2，凯撒5，拿下！</p><h2 id="凯撒？替换？呵呵"><a href="#凯撒？替换？呵呵" class="headerlink" title="凯撒？替换？呵呵!"></a>凯撒？替换？呵呵!</h2><p>题目：MTHJ{CUBCGXGUGXWREXIPOYAOEYFIGXWRXCHTKHFCOHCFDUCGTXZOHIXOEOWMEHZO}</p><h1 id="wp：-5"><a href="#wp：-5" class="headerlink" title="wp："></a>wp：</h1><p>以为是简单的凯撒加密，结果啥也不是，上工具<a href="https://quipqiup.com/%EF%BC%8C%E5%8F%AF%E4%BB%A5%E7%88%86%E5%87%BA%E6%9B%BF%E6%8D%A2%E5%AF%86%E7%A0%81%E7%9A%84%E6%89%80%E6%9C%89%E5%8F%AF%E8%83%BD%EF%BC%8C%E5%B0%86MTHJ=FLAG%E6%9D%A5%E6%8F%90%E4%BE%9B%E4%BB%A3%E6%9B%BF%E5%AF%86%E7%A0%81%E7%9A%84%E5%8F%AF%E8%83%BD%E6%80%A7%EF%BC%8C%E5%BE%97%E5%88%B0%E6%89%80%E6%9C%89%E7%BB%93%E6%9E%9C">https://quipqiup.com/，可以爆出替换密码的所有可能，将MTHJ=FLAG来提供代替密码的可能性，得到所有结果</a><br><img src="/images/b14.png" alt="alt"><br>去除空行<br><img src="/images/b15.png" alt="alt"><br>拿下！</p><h2 id="权限获取第一步"><a href="#权限获取第一步" class="headerlink" title="权限获取第一步"></a>权限获取第一步</h2><p>题目：<br><img src="/images/b16.png" alt="alt"></p><h1 id="wp：-6"><a href="#wp：-6" class="headerlink" title="wp："></a>wp：</h1><p>拿到题就蒙了，这啥呀，直接上工具<a href="https://quipqiup.com/">https://quipqiup.com/</a> 试试，在字符串最后面看到了flag字样，拿下</p><h2 id="rsa-1"><a href="#rsa-1" class="headerlink" title="rsa 1"></a>rsa 1</h2><p>题目：<br><img src="/images/b17.png" alt="alt"></p><h1 id="wp：-7"><a href="#wp：-7" class="headerlink" title="wp："></a>wp：</h1><p>拿到flag.enc以为是抓的包，但wireshark打不开，想到应该是密文了，由公钥分解得到n,e( <a href="http://tool.chacuo.net/cryptrsakeyparse">http://tool.chacuo.net/cryptrsakeyparse</a> ),将n十六进制转十进制，大数分解n，直接上脚本<br><a href="http://www.factordb.com/index.php">http://www.factordb.com/index.php</a>?<br><img src="/images/b18.png" alt="alt"><br>拿下！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> -BUUCTF </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> -CTF </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ctfshow-Web_4</title>
       <link href="2021/06/13/ctfshow/"/>
       <url>2021/06/13/ctfshow/</url>
